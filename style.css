@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat & display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.kisa_win {
+    width: 500px;
+    height: 370px;
+    display: none;
+    bottom: -100%;
+    position: fixed;
+}
+
+.kisa_zrada {
+    /* top: 50px; */
+    position: fixed;
+    width: 500px;
+    height: 370px;
+    display: none;
+    bottom: -100%;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.question {
+    font-size: 100px;
+}
+
+.answer {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 65px;
+    height: 65px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+}
+
+.ans-row {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.container_h3 {
+    margin-bottom: 10px;
+}
+
+.main {
+    display: none;
+}
+
+.start-btn {
+    font-size: 30px;
+    padding: .5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+@keyframes kisa_win {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.image {
+    position: relative;
+    animation: kisa_win 1s ease forwards;
+}
